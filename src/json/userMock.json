@@ -1,0 +1,8 @@
+[
+    {
+        "email" : "tom@digital.com",
+        "name" : "Tom",
+        "password" : "1234",
+        "listProducts": []
+    }
+]
