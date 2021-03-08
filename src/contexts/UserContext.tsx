@@ -6,6 +6,8 @@ interface UserContextProps {
   isUserLogged: Function,
   addProductToCart: Function,
   removeProductToCart: Function,
+  addAmmountProductToCart: Function,
+  subAmmountProductToCart: Function,
   userLogged : any
 }
 
@@ -15,6 +17,8 @@ const UserValue = {
   logout: () => {},
   isUserLogged: () => {},
   removeProductToCart: () => {},
+  addAmmountProductToCart: () => {},
+  subAmmountProductToCart: () => {},
   addProductToCart: () => {},
 }
 

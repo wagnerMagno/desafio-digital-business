@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const HeaderStyled = styled.section`
     width: 100%;
-
     .logo{
         width : 244px;
         heigth : 101px;

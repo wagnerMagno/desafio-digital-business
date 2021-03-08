@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const HomeStyled = styled.section`
-
-
     .p-cart{
         font-family: Open Sans;
         font-size : 22px;
@@ -28,6 +26,7 @@ const HomeStyled = styled.section`
     .iconCart{
         width: 42px;
         margin-right: 10px;
+        cursor: pointer;
     }
 
     .btn-add-remove {
@@ -81,6 +80,10 @@ const HomeStyled = styled.section`
     .grid-button{
         display: flex;
         justify-content: center;
+    }
+
+    .grid-price-removed{
+        background-color: #3877A1 !important;
     }
 
     .grid-price{
