@@ -3,13 +3,15 @@ import { createContext } from "react";
 interface UserContextProps {
   login: Function,
   logout: Function,
-  userLogged : any[]
+  isUserLogged: Function,
+  userLogged : any
 }
 
 const UserValue = {
   userLogged: [],
   login: () => {},
-  logout: () => {}
+  logout: () => {},
+  isUserLogged: () => {},
 }
 
 export const UserContext = createContext<UserContextProps>(UserValue)

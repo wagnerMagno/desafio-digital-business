@@ -23,12 +23,16 @@ const UserProvider = (props: any) => {
 
 
     const login = (email: string, password: string) => {
-        let objUser = userMock.find(obj => obj.email === email && obj.password === password);
+        let objUser = userMock.find(obj => obj.email === email.trim() && obj.password === password.trim());
         if (objUser) {
             setUserLogged(objUser);
         } else {
             //mensagem de erro aqui
         }
+    }
+
+    const isUserLogged = () => {
+        return Boolean(userLogged.email);
     }
 
     const logout = () => {
@@ -37,7 +41,7 @@ const UserProvider = (props: any) => {
 
     const UserData = useMemo(() => {
         return {
-            userLogged, logout, login
+            userLogged, logout, login, isUserLogged
         }
     }, [userLogged]);
 
