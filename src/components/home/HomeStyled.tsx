@@ -65,6 +65,7 @@ const HomeStyled = styled.section`
 
     .card-product{
         // padding :
+        margin-bottom : 20px;
     }
 
     .img-product{
