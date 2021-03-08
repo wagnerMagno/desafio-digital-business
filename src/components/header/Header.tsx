@@ -34,6 +34,8 @@ const Header = () => {
             logout();
         } else {
             login(email, password);
+            setEmail("");
+            setPassword("");
         }
     }
 
@@ -50,12 +52,13 @@ const Header = () => {
 
                 <Grid>
                     {
-                         isUserLogged() &&
+                        isUserLogged() &&
                         <p className="welcome">
                             Welcome {userLogged.name}
                         </p>
                     }
-                    <Button aria-describedby={id} variant="contained" className="btn-login-logout" onClick={handleClick}>
+                    <Button aria-describedby={id} variant="contained" className={`btn-login-logout ${isUserLogged() ? ' btn-logout' : ''}`}
+                        onClick={(event : any) => { isUserLogged() ? requestLoginLogout() : handleClick(event) }}>
                         {isUserLogged() ? 'Logout' : 'Login'}
                     </Button>
                     {

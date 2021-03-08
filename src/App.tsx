@@ -4,15 +4,19 @@ import Header from './components/header/Header';
 import Banner from './components/banner/Banner';
 import Content from './components/content/Content';
 import Footer from './components/footer/Footer';
+import ProductProvider from "./providers/product-provider";
 
 
 const App = () => {
   return (
     <UserProvider>
-      <Header/>
-      <Banner/>
-      <Content/>
-      <Footer/>
+      <ProductProvider>
+
+        <Header />
+        <Banner />
+        <Content />
+        <Footer />
+      </ProductProvider>
     </UserProvider>
   );
 };

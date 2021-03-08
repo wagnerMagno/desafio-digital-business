@@ -1,12 +1,13 @@
 import React from "react";
 import BannerStyled from './BannerStyled';
 
+import banner from "../../img/banner.png"
 
 const Banner = () => {
     
     return (
         <BannerStyled>
-            Banner
+            <img className="banner" src={banner} alt="Banner" />
         </BannerStyled>
     );
 };

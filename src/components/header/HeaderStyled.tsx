@@ -32,6 +32,14 @@ const HeaderStyled = styled.section`
         }
     }
 
+    .btn-logout{
+        background-color : #D55454 !important;
+
+        &:hover{
+            background-color : #D55454 !important;
+        }
+    }
+
     .welcome{
         color: #3877A1;
         display: inline-block;

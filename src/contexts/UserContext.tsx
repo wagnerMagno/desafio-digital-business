@@ -4,6 +4,8 @@ interface UserContextProps {
   login: Function,
   logout: Function,
   isUserLogged: Function,
+  addProductToCart: Function,
+  removeProductToCart: Function,
   userLogged : any
 }
 
@@ -12,6 +14,8 @@ const UserValue = {
   login: () => {},
   logout: () => {},
   isUserLogged: () => {},
+  removeProductToCart: () => {},
+  addProductToCart: () => {},
 }
 
 export const UserContext = createContext<UserContextProps>(UserValue)
