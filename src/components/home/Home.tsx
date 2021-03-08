@@ -29,7 +29,7 @@ const Home = () => {
         return isUserLogged() && userLogged.listProducts.filter((obj: any) => obj.id === id).length > 0;
     }
 
-    const teste = () => {
+    const goToCart = () => {
         history.push('/cart')
     }
 
@@ -55,7 +55,7 @@ const Home = () => {
                     </p>
                 </Grid>
                 <Grid>
-                    <img onClick={() => teste()} className="iconCart" src={iconCart} alt="cart" />
+                    <img onClick={() => goToCart()} className="iconCart" src={iconCart} alt="cart" />
                     <p className="p-cart">
                         {
                             isUserLogged ? userLogged.listProducts.length : '0'
